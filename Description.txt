@@ -1,0 +1,13 @@
+datasets:
+	Allen_Jan_resample10um: connectivity.py的输入；
+	result: connectivity.py的输出，以及convertConnectivityRaw的输入；
+	两个pickle文件：convertConnectivityRaw的输出；
+
+src: 
+	connectivity.py: 单细胞层次，axon到den的距离计算
+	bouto_level_connectivity.py：bouton层次，axon到den的距离计算
+
+jupyter:
+	convertConnectivityRaw.ipynb: 整理axon到den的距离，成cell-cell的矩阵
+	dendrite radius estimation.ipynb：每个den的半径，以及soma坐标和脑区
+	mean.adj和mean -single-cell-connectivity.ipynb: 展示cell-cell矩阵
